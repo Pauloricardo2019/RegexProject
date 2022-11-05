@@ -70,11 +70,9 @@ func main() {
 
 		//Incrementa os objetos no array
 		tables = append(tables, *table)
-		if len(tables) == 10000 {
-			if err := persistDb(tables); err != nil {
-				panic(err)
-			}
-		}
+	}
+	if err := persistDb(tables); err != nil {
+		panic(err)
 	}
 
 	fmt.Println(tables)
