@@ -79,6 +79,7 @@ func main() {
 
 }
 
+// get the results of the match groups
 func getMatchedValueByIdentifier(id string, matches []string, groups []string) string {
 	for _, v := range groups {
 		if v == id {
@@ -89,6 +90,7 @@ func getMatchedValueByIdentifier(id string, matches []string, groups []string) s
 	return ""
 }
 
+// persist data on database
 func persistDb(tables []Table) error {
 	db, err := GetGormDB()
 	if err != nil {
