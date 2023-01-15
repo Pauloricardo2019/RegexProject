@@ -29,6 +29,6 @@ func GetGormDB() (*gorm.DB, error) {
 		panic(err)
 	}
 	gormDb = newDb
-
+  fmt.Println("connect to database")
 	return gormDb, nil
 }
