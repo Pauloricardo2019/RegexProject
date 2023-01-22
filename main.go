@@ -76,6 +76,7 @@ func main() {
 	}
 
 	fmt.Println(tables)
+ fmt.Println("finish process")
 
 }
 
