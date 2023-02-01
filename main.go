@@ -68,7 +68,7 @@ func main() {
 		table.Date = date
 		table.Verb = verb
 
-		//Incrementa os objetos no array
+		
 		tables = append(tables, *table)
 	}
 	if err := persistDb(tables); err != nil {
