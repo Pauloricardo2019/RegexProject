@@ -13,8 +13,8 @@ const (
 
 var regex *regexp.Regexp
 
-func main() {
-
+func main() { 
+ fmt.Println("start")
 	table := &Table{}
 	tables := []Table{}
 	//Compila a regex criada na const pattern
