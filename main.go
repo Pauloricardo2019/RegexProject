@@ -16,7 +16,7 @@ const (
 var regex *regexp.Regexp
 
 func main() { 
-  
+   //start
 	table := &Table{}
 	tables := []Table{}
 	//Compila a regex criada na const pattern
